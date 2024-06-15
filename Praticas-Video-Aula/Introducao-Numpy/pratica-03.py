@@ -7,5 +7,8 @@ import numpy as np
 
 # Criando uma Array de zeros com Numpy
 array_de_zeros = np.zeros(10)
-# Lista criada com zeros: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
-print(array_de_zeros)
+
+# Alterando o dado referente a posição
+array_de_zeros[0] = 9
+print(array_de_zeros[0]) # = 9.0
+print(array_de_zeros) # Chamando a lista pós alteração: [9. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
