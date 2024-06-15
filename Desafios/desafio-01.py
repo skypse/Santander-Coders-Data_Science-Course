@@ -6,6 +6,12 @@
 # sendo notas de alunos, transforma em array do numpy e faz os calculos como: Max, Min, Std, Mean, Argmin...
 
 import numpy as np
+import os
+
+
+def limpar_console():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 
 print("Insira as notas dos alunos!")
 
@@ -22,6 +28,14 @@ for n in range(10):
         except ValueError:
             print("Insira um valor númerico válido!")
 
+limpar_console()
+
 # Convertendo a Lista em uma Array Numpy
 lista_de_notas_array = np.array(notas)
+print("Maior nota da lista:", lista_de_notas_array.max())
+print("Menor nota da lista:", lista_de_notas_array.min())
+print("Media das notas:", lista_de_notas_array.mean())
+print("Desvio Padrão da lista:", lista_de_notas_array.std())
+print("Posição da maior nota da lista:", lista_de_notas_array.argmax())
+print("Posição da menor nota da lista:", lista_de_notas_array.argmin())
 print("Array de notas:", lista_de_notas_array)
