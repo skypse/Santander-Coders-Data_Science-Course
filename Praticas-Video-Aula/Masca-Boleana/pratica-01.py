@@ -17,4 +17,4 @@ mask = (is_covid_positive == 'Yes')
 print("------------------------------------------")
 print("Array com as alterações da mascara:")
 is_covid_positive[mask] = 'C19'
-print(is_covid_positive)
+print(is_covid_positive) # ['C19' 'No' 'No' 'C19' 'No']
